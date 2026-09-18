@@ -10,31 +10,146 @@
 
 
 
-/* Style Maxou : rouge et noir, plus dynamique */
-body{background:#070707;color:#f5f5f5}
-header{border-bottom:3px solid #e10600;box-shadow:0 8px 35px rgba(225,6,0,.18)}
-header:after{content:"";position:absolute;left:0;right:0;bottom:0;height:4px;background:linear-gradient(90deg,#e10600,#7d0000,#e10600);z-index:2}
-nav{background:rgba(5,5,5,.98);border-bottom:2px solid #e10600;box-shadow:0 5px 22px rgba(225,6,0,.12)}
-nav a:hover,nav a:first-child{color:#e10600}
-section:nth-of-type(odd){background:linear-gradient(180deg,#111 0%,#090909 100%)}
-section:nth-of-type(even){background:linear-gradient(180deg,#090909 0%,#111 100%)}
-.section-head{border-bottom:1px solid #451010}
-.section-head h2{color:#fff}
-.section-head h2:after{content:"";display:inline-block;width:46px;height:4px;background:#e10600;margin:0 0 6px 12px;box-shadow:0 0 12px rgba(225,6,0,.45)}
-.info-panel,.card,.mini,.champ-main,.liveBox{border-color:#321414;box-shadow:0 8px 28px rgba(0,0,0,.32),inset 0 2px 0 rgba(225,6,0,.22);transition:.2s}
-.info-panel:hover,.card:hover,.mini:hover{border-color:#e10600;box-shadow:0 10px 30px rgba(225,6,0,.12);transform:translateY(-3px)}
-.card:before{width:55px;background:linear-gradient(90deg,#e10600,#8c0000)}
-.card .round,.section-head span{color:#b36a6a}
-.result{color:#fff}
-.card:not(.upcoming) .result{color:#e10600;text-shadow:0 0 15px rgba(225,6,0,.25)}
-.champ-main{border:1px solid #e10600;background:linear-gradient(135deg,#1a0b0b,#101010)}
-.champ-main .big{color:#e10600;text-shadow:0 0 25px rgba(225,6,0,.35)}
-.liveBox{border:1px solid #e10600;background:linear-gradient(135deg,#1b0b0b,#0d0d0d)}
-.liveButton{background:#e10600;border:1px solid #ff2922;box-shadow:0 5px 18px rgba(225,6,0,.2)}
-.liveButton.secondary{background:#171717;color:#fff;border:1px solid #e10600}
-.liveButton:hover,.liveButton.secondary:hover{background:#ff1b14;border-color:#ff1b14;color:#fff}
-.socials a:hover{border-color:#e10600;background:#210b0b;box-shadow:0 5px 18px rgba(225,6,0,.16)}
-footer{border-top:3px solid #e10600;background:#050505}
+
+/* Nouveau style : rouge, noir et blanc, plus lumineux */
+body{
+  background:#f4f4f4;
+  color:#111;
+}
+header{
+  border-bottom:5px solid #e10600;
+  box-shadow:0 10px 35px rgba(0,0,0,.22);
+}
+header:after{
+  content:"";
+  position:absolute;
+  left:0;right:0;bottom:0;height:6px;
+  background:linear-gradient(90deg,#e10600 0%,#ff2b24 45%,#111 100%);
+  z-index:2;
+}
+nav{
+  background:#111;
+  border-bottom:3px solid #e10600;
+  box-shadow:0 6px 20px rgba(0,0,0,.15);
+}
+nav a{color:#fff}
+nav a:hover,nav a:first-child{color:#ff2b24}
+section{
+  background:#fff;
+  color:#111;
+}
+section:nth-of-type(odd){
+  background:linear-gradient(135deg,#ffffff 0%,#f3f3f3 65%,#fff 100%);
+}
+section:nth-of-type(even){
+  background:linear-gradient(135deg,#eeeeee 0%,#ffffff 60%,#f2f2f2 100%);
+}
+.section-head{
+  border-bottom:2px solid #111;
+}
+.section-head h2{color:#111}
+.section-head h2:after{
+  content:"";
+  display:inline-block;
+  width:58px;height:5px;
+  background:linear-gradient(90deg,#e10600,#111);
+  margin:0 0 6px 12px;
+}
+.section-head span{color:#e10600}
+.presentation{color:#444}
+.info-panel,.card,.mini,.champ-main,.liveBox{
+  background:#fff;
+  color:#111;
+  border:2px solid #ddd;
+  box-shadow:0 7px 20px rgba(0,0,0,.10);
+  transition:.2s;
+}
+.info-panel h3,.card h3,.mini b{color:#111}
+.info-panel:hover,.card:hover,.mini:hover{
+  border-color:#e10600;
+  box-shadow:0 10px 26px rgba(225,6,0,.18);
+  transform:translateY(-3px);
+}
+.info-box{
+  background:#111 !important;
+  border:1px solid #e10600 !important;
+  color:#fff;
+}
+.info-box small{color:#bbb}
+.info-box b{color:#fff}
+.card:before{
+  width:75px;
+  background:linear-gradient(90deg,#e10600,#111);
+}
+.card .round{color:#e10600}
+.card .date{color:#666}
+.result{
+  color:#e10600 !important;
+  text-shadow:none !important;
+  font-weight:900;
+}
+.card.upcoming{
+  background:linear-gradient(145deg,#fff,#f1f1f1);
+}
+.champ-main{
+  border:2px solid #e10600;
+  background:linear-gradient(135deg,#111 0%,#1d1d1d 70%,#e10600 190%);
+  color:#fff;
+  box-shadow:0 10px 28px rgba(225,6,0,.18);
+}
+.champ-main .kicker{color:#ff2b24}
+.champ-main .big{
+  color:#fff;
+  text-shadow:0 0 22px rgba(225,6,0,.45);
+}
+.champ-main p{color:#ddd}
+.mini{background:#fff}
+.mini small{color:#777}
+.liveBox{
+  border:2px solid #e10600;
+  background:linear-gradient(135deg,#111 0%,#191919 70%,#e10600 180%);
+  color:#fff;
+  box-shadow:0 10px 30px rgba(225,6,0,.2);
+}
+.liveTitle{color:#fff}
+.liveText{color:#ddd}
+.liveButton{
+  background:#e10600;
+  color:#fff;
+  border:2px solid #e10600;
+  box-shadow:0 5px 18px rgba(225,6,0,.25);
+}
+.liveButton.secondary{
+  background:#fff;
+  color:#111;
+  border:2px solid #fff;
+}
+.liveButton:hover{
+  background:#ff2b24;
+  border-color:#ff2b24;
+}
+.liveButton.secondary:hover{
+  background:#e10600;
+  border-color:#e10600;
+  color:#fff;
+}
+.sponsor-note,.contact p{color:#555}
+.socials a{
+  background:#111;
+  color:#fff;
+  border:2px solid #111;
+}
+.socials a:hover{
+  background:#e10600;
+  border-color:#e10600;
+  box-shadow:0 6px 18px rgba(225,6,0,.22);
+}
+footer{
+  border-top:4px solid #e10600;
+  background:#111;
+  color:#aaa;
+}
+
 </style>
 </head>
 <body>
