@@ -12,22 +12,89 @@ header h1{font-size:clamp(3rem,10vw,7rem);letter-spacing:4px;text-transform:uppe
 header p{margin-top:10px;font-size:1.3rem;color:#ddd}.number{margin-top:25px;font-size:5rem;font-weight:bold}
 nav{position:sticky;top:0;z-index:10;display:flex;justify-content:center;gap:25px;flex-wrap:wrap;padding:15px 20px;background:#000;border-bottom:1px solid #333}
 nav a{color:#fff;text-decoration:none;font-weight:bold}nav a:hover{color:#ff3b30}
-section{max-width:1100px;margin:auto;padding:80px 20px}h2{text-align:center;margin-bottom:35px;font-size:2.3rem;text-transform:uppercase}
+section{max-width:1100px;margin:auto;padding:80px 20px}
+h2{text-align:center;margin-bottom:35px;font-size:2.3rem;text-transform:uppercase}
 .presentation{text-align:center;max-width:750px;margin:auto;color:#ddd;font-size:1.1rem}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
 .card{background:#1d1d1d;border:1px solid #333;border-radius:16px;padding:25px;text-align:center}.card h3{margin-bottom:8px}
-.result{font-size:2rem;font-weight:bold;margin-bottom:5px}.contact{text-align:center}.contact a{display:inline-block;margin-top:20px;padding:14px 24px;background:#ff3b30;color:#fff;text-decoration:none;border-radius:10px;font-weight:bold}
+.result{font-size:2rem;font-weight:bold;margin-bottom:5px}
+.liveBox{background:linear-gradient(135deg,#241010,#111);border:1px solid #4b2020;border-radius:18px;padding:35px;text-align:center}
+.liveDot{display:inline-block;width:11px;height:11px;border-radius:50%;background:#35e26b;box-shadow:0 0 15px #35e26b;margin-right:8px}
+.liveTitle{font-size:1.1rem;font-weight:bold;text-transform:uppercase;letter-spacing:1px}
+.liveText{color:#bbb;margin:12px auto 20px;max-width:650px}
+.liveButton{display:inline-block;padding:15px 24px;background:#ff3b30;color:#fff;text-decoration:none;border-radius:10px;font-weight:900;text-transform:uppercase}
+.liveButton:hover{filter:brightness(1.08)}
+.contact{text-align:center}.contact a{display:inline-block;margin-top:20px;padding:14px 24px;background:#ff3b30;color:#fff;text-decoration:none;border-radius:10px;font-weight:bold}
 footer{text-align:center;padding:30px 20px;background:#000;color:#aaa}
 </style>
 </head>
 <body>
-<header id="accueil"><h1>Maxou Compétition</h1><p>Autocross • Challenge CORAC • Junior Sprint</p><div class="number">#518</div></header>
-<nav><a href="#accueil">Accueil</a><a href="#pilote">Pilote</a><a href="#resultats">Résultats</a><a href="#championnat">Championnat</a><a href="#sponsors">Sponsors</a></nav>
-<section id="pilote"><h2>Le pilote</h2><div class="presentation"><p>Bienvenue sur le site officiel de Maxou Compétition. Retrouvez ici l'actualité du championnat, les résultats des courses et les partenaires de la saison.</p><p style="margin-top:15px">Pilote : <strong>Max Esteban Jeanjean</strong><br>Numéro : <strong>#518</strong><br>Discipline : <strong>Autocross</strong></p></div></section>
-<section id="resultats"><h2>Derniers résultats</h2><div class="cards"><div class="card"><div class="result">P1</div><p>Empeaux</p></div><div class="card"><div class="result">P2</div><p>Badefols-d'Ans</p></div><div class="card"><div class="result">P2</div><p>Saint-Junien</p></div><div class="card"><div class="result">P9</div><p>Loupiac — demi-finale</p></div></div></section>
-<section id="championnat"><h2>Championnat</h2><div class="cards"><div class="card"><h3>Challenge CORAC</h3><div class="result">P1</div><p>Classement actuel</p></div><div class="card"><h3>Junior Sprint</h3><div class="result">#518</div><p>Maxou Compétition</p></div><div class="card"><h3>Objectif</h3><div class="result">🏁</div><p>Rester sur cette lancée</p></div></div></section>
-<section id="sponsors"><h2>Nos sponsors</h2><div class="cards"><div class="card"><h3>Votre logo ici</h3><p>Partenaire principal</p></div><div class="card"><h3>Votre logo ici</h3><p>Partenaire</p></div><div class="card"><h3>Votre logo ici</h3><p>Partenaire</p></div></div></section>
-<section class="contact"><h2>Suivre Maxou Compétition</h2><p>Ajoute ici tes liens Facebook, Instagram, YouTube et TikTok.</p><a href="#">Mes réseaux</a></section>
+<header id="accueil">
+<h1>Maxou Compétition</h1>
+<p>Autocross • Challenge CORAC • Junior Sprint</p>
+<div class="number">#518</div>
+</header>
+
+<nav>
+<a href="#accueil">Accueil</a>
+<a href="#pilote">Pilote</a>
+<a href="#resultats">Résultats</a>
+<a href="#championnat">Championnat</a>
+<a href="#direct">Résultats en direct</a>
+<a href="#sponsors">Sponsors</a>
+</nav>
+
+<section id="pilote">
+<h2>Le pilote</h2>
+<div class="presentation">
+<p>Bienvenue sur le site officiel de Maxou Compétition. Retrouvez ici l'actualité du championnat, les résultats des courses et les partenaires de la saison.</p>
+<p style="margin-top:15px">Pilote : <strong>Max Esteba Jeanjean</strong><br>Numéro : <strong>#518</strong><br>Discipline : <strong>Autocross</strong></p>
+</div>
+</section>
+
+<section id="resultats">
+<h2>Derniers résultats</h2>
+<div class="cards">
+<div class="card"><div class="result">P1</div><p>Empeaux</p></div>
+<div class="card"><div class="result">P2</div><p>Badefols-d'Ans</p></div>
+<div class="card"><div class="result">P2</div><p>Saint-Junien</p></div>
+<div class="card"><div class="result">P9</div><p>Loupiac — demi-finale</p></div>
+</div>
+</section>
+
+<section id="championnat">
+<h2>Championnat</h2>
+<div class="cards">
+<div class="card"><h3>Challenge CORAC</h3><div class="result">P1</div><p>Classement actuel</p></div>
+<div class="card"><h3>Junior Sprint</h3><div class="result">#518</div><p>Maxou Compétition</p></div>
+<div class="card"><h3>Objectif</h3><div class="result">🏁</div><p>Rester sur cette lancée</p></div>
+</div>
+</section>
+
+<section id="direct">
+<div class="liveBox">
+<div class="liveTitle"><span class="liveDot"></span> Résultats en direct</div>
+<h2 style="margin-top:12px;margin-bottom:12px">ITS Results</h2>
+<p class="liveText">Pendant les courses, clique ici pour ouvrir directement la page ITS Results et retrouver les chronos et résultats de l'épreuve.</p>
+<a class="liveButton" href="https://www.its-results.com/" target="_blank" rel="noopener">Ouvrir ITS Results</a>
+</div>
+</section>
+
+<section id="sponsors">
+<h2>Nos sponsors</h2>
+<div class="cards">
+<div class="card"><h3>Votre logo ici</h3><p>Partenaire principal</p></div>
+<div class="card"><h3>Votre logo ici</h3><p>Partenaire</p></div>
+<div class="card"><h3>Votre logo ici</h3><p>Partenaire</p></div>
+</div>
+</section>
+
+<section class="contact">
+<h2>Suivre Maxou Compétition</h2>
+<p>Ajoute ici tes liens Facebook, Instagram, YouTube et TikTok.</p>
+<a href="#">Mes réseaux</a>
+</section>
+
 <footer>© 2026 Maxou Compétition — Autocross #518</footer>
 </body>
 </html>
