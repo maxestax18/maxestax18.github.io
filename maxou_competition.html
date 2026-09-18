@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maxou Compétition</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            background:
+                linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.8)),
+                radial-gradient(circle at center, #444 0%, #111 65%);
+        }
+
+        header h1 {
+            font-size: clamp(3rem, 10vw, 7rem);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 1.3rem;
+            color: #ddd;
+        }
+
+        .number {
+            margin-top: 25px;
+            font-size: 5rem;
+            font-weight: bold;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+            padding: 15px 20px;
+            background: #000;
+            border-bottom: 1px solid #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ff3b30;
+        }
+
+        section {
+            max-width: 1100px;
+            margin: auto;
+            padding: 80px 20px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            font-size: 2.3rem;
+            text-transform: uppercase;
+        }
+
+        .presentation {
+            text-align: center;
+            max-width: 750px;
+            margin: auto;
+            color: #ddd;
+            font-size: 1.1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: #1d1d1d;
+            border: 1px solid #333;
+            border-radius: 16px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .card h3 {
+            margin-bottom: 8px;
+        }
+
+        .result {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 24px;
+            background: #ff3b30;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background: #000;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header id="accueil">
+        <h1>Maxou Compétition</h1>
+        <p>Autocross • Challenge CORAC • Junior Sprint</p>
+        <div class="number">#518</div>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#pilote">Pilote</a>
+        <a href="#resultats">Résultats</a>
+        <a href="#championnat">Championnat</a>
+        <a href="#sponsors">Sponsors</a>
+    </nav>
+
+    <section id="pilote">
+        <h2>Le pilote</h2>
+        <div class="presentation">
+            <p>
+                Bienvenue sur le site officiel de Maxou Compétition.
+                Retrouvez ici l'actualité du championnat, les résultats des courses
+                et les partenaires de la saison.
+            </p>
+            <p style="margin-top: 15px;">
+                Pilote : <strong>Max Esteban Jeanjean</strong><br>
+                Numéro : <strong>#518</strong><br>
+                Discipline : <strong>Autocross</strong>
+            </p>
+        </div>
+    </section>
+
+    <section id="resultats">
+        <h2>Derniers résultats</h2>
+
+        <div class="cards">
+            <div class="card">
+                <div class="result">P1</div>
+                <p>Empeaux</p>
+            </div>
+
+            <div class="card">
+                <div class="result">P2</div>
+                <p>Badefols-d'Ans</p>
+            </div>
+
+            <div class="card">
+                <div class="result">P2</div>
+                <p>Saint-Junien</p>
+            </div>
+
+            <div class="card">
+                <div class="result">P9</div>
+                <p>Loupiac — demi-finale</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="championnat">
+        <h2>Championnat</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Challenge CORAC</h3>
+                <div class="result">P1</div>
+                <p>Classement actuel</p>
+            </div>
+
+            <div class="card">
+                <h3>Junior Sprint</h3>
+                <div class="result">#518</div>
+                <p>Maxou Compétition</p>
+            </div>
+
+            <div class="card">
+                <h3>Objectif</h3>
+                <div class="result">🏁</div>
+                <p>Rester sur cette lancée</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sponsors">
+        <h2>Nos sponsors</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Votre logo ici</h3>
+                <p>Partenaire principal</p>
+            </div>
+
+            <div class="card">
+                <h3>Votre logo ici</h3>
+                <p>Partenaire</p>
+            </div>
+
+            <div class="card">
+                <h3>Votre logo ici</h3>
+                <p>Partenaire</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2>Suivre Maxou Compétition</h2>
+        <p>Ajoute ici tes liens Facebook, Instagram, YouTube et TikTok.</p>
+        <a href="#" onclick="alert('On ajoutera tes réseaux ici !'); return false;">
+            Mes réseaux
+        </a>
+    </section>
+
+    <footer>
+        © 2026 Maxou Compétition — Autocross #518
+    </footer>
+
+</body>
+</html>
